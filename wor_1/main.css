@@ -1,0 +1,63 @@
+.book1 {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+
+body{
+    background-color: antiquewhite;
+}
+.inpu1:checked+label {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background-color: red;
+    display: block;
+}
+
+
+.inpu2:checked+label {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    display: block;
+    background-color: rgb(222, 255, 10);
+}
+
+
+.inpu3:checked+label {
+    display: block;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background-color: rgb(38, 255, 0);
+}
+
+/* 111111111111111 */
+
+.befor{
+    padding: 20px;
+    cursor: pointer;
+}
+.oldi {
+    background-color: blue;
+    width: 65px;
+    height: 1.5px;
+    margin-bottom: 10px;
+}
+
+.orta {
+    background-color: red;
+    width:35px;
+    height: 1.5px;
+    margin-bottom: 10px;
+
+}
+
+.orqa {
+    background-color: rgb(116, 233, 7);
+    width: 45px;
+    height: 1.5px;
+    margin-bottom: 10px;
+
+}

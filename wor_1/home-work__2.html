@@ -1,0 +1,297 @@
+<!DOCTYPE html> <!-- Bu html5 ekanligni bildradi -->
+
+<html lang="en"> <!--bu sayti qaysi tilda ekanligni bildradi-->
+
+
+<head> <!--bu sayti bosh qismi ekanligni bildradi va unda sayt ko`rnmaydigan kodlar metalar va linklar bo`ladi-->
+
+    <meta charset="UTF-8"> <!-- bu hamma sayta va hamma davlatalrdi tilarda moslashuvchanlikni anglatadi-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- bu internet EXploerlarda ishlatladi va brazurlerda moslashuvchlik -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- name="viewport" bu brazurlarda qayerda ko`rnishni bildradi-->
+    <!-- content="width=device-width, initial-scale=1.0" bu mobel qurlamrda moslashuv chanlikdi bildradi-->
+    <link rel="stylesheet" href="./lesson-efir.html">
+    <title>Document</title> <!-- bu sayti nomni ko`rsatadi -->
+    <style>
+        body {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .efir a:hover {
+            background-color: aqua;
+            color: red;
+        }
+
+        .efir a {
+            display: flex;
+            justify-content: center;
+            background-color: #fff;
+            border: 2px solid black;
+            padding: 10px 40px;
+            border-radius: 20px;
+            color: rgb(46, 50, 50);
+            transition: all 0.4s;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body> <!-- bu sahifada kurandigan qismi va bunda yozilgan kodlard natijasi sahifada ko`rnadi-->
+    <div class="body-right">
+        <br><br>
+        <div class="efir">
+            <a href="./lesson-efir.html">EFIR</a>
+        </div>
+        <br><br>
+        <form>
+            <input type="text" id="username" placeholder="Familyangiz">
+            <label for="username"><b>Familyangiz</b></label>
+            <br>
+            <br>
+            <br>
+            <br>
+            <input type="text" id="name" placeholder="Ismingiz">
+            <label for="name"> <em>Ismingiz</em></label>
+            <br>
+            <br>
+            <br>
+            <br>
+            <input type="email" id="email" placeholder="Email">
+            <label for="email"><U>Email</U></label>
+            <br>
+            <br>
+            <br>
+            <br>
+            <input type="password" id="pasword">
+            <label for="pasword" name="pasword"><big>Pasword</big></label>
+            <br>
+            <br>
+            <br>
+            <br>
+            <input type="text" id="kods" type="checkbox" placeholder="parol" maxlength="10" minlength="5">
+            <label for="kods">Kods</label>
+            <br>
+            <br>
+            <br>
+            <br>
+            <input type="number" id="number" placeholder="numvber">
+            <label for="number"><del>Number</del></label>
+            <br>
+            <br>
+            <br>
+            <br>
+            <input type="date" id="data">
+            <label for="data"><mark>Data</mark></label>
+            <br>
+            <br>
+            <br>
+            <br>
+            <input type="time" id="time">
+            <label for="time"><small>Time</small></label>
+            <br>
+            <br>
+            <br>
+            <br>
+            <input type="file" id="files">
+            <label for="files"><del>Files</del></label>
+            <br>
+            <br>
+            <br>
+            <br>
+            <input type="image" id="image"  >
+            <label for="image">image</label>
+            <br>
+            <br>
+            <br>
+            <input type="submit" id="submit">
+            <label for="submit">Refresh</label>
+            <br>
+            <br>
+            <br>
+            <br>
+            <input type="checkbox" id="checkbox">
+            <label for="checkbox">1<sub>ON</sub>sub/sup 1<sup>Off</sup></label>
+            <br>
+            <br>
+            <br>
+            <br>
+            <input type="color" id="color">
+            <label for="color">Color</label>
+            <br>
+            <br>
+            <br>
+            <br>
+            <button class="button">Gomid</button>
+            <br>
+            <br>
+            <br>
+            <br>
+            <a href="https://google.com" target="_blank">Go-new__window</a>
+
+        </form>
+    </div>
+
+
+    <div class="body-left">
+        <div>
+            <table border="10" cellpadding="20">
+                <thead>
+                    <tr>
+                        <th>surname</th>
+                        <th>name</th>
+                        <th>old</th>
+                        <th>work</th>
+                        <th>live</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Temirov</td>
+                        <td>Abdumalik</td>
+                        <td>27-old</td>
+                        <td>Developer</td>
+                        <td>In Termiz</td>
+                    </tr>
+                    <tr>
+                        <td>Temirov</td>
+                        <td>Abdulla</td>
+                        <td>25-old</td>
+                        <td>Docktr</td>
+                        <td>In Rossiy</td>
+                    </tr>
+                    <tr>
+                        <td>Temirova</td>
+                        <td>Sarvinoz</td>
+                        <td>20-old</td>
+                        <td>Ticher</td>
+                        <td>In Termiz</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <ol>
+                <li>asslomu alekum</li>
+                <li>volekum asslom</li>
+                <li>hello</li>
+                <li>we</li>
+                <li>prvet</li>
+                <li>gu tentk</li>
+            </ol>
+        </div>
+        <div>
+            <form action="">
+                <select name="Contry" id="contry">
+                    <option value="UZB">UZBEKISTON</option>
+                    <option value="USA">YEVREYLAR</option>
+                    <option value="RUS">TATARLAR</option>
+                    <option value="GER">FASHILAR</option>
+                </select>
+                <br>
+                <br>
+                <br>
+                <textarea name="Text" id="texy" placeholder="Namuna" cols="50" rows="5"> comment</textarea>
+                <br>
+                <br>
+                <br>
+            </form>
+        </div>
+        <div>
+            <details>
+                <summary>Qizqma </summary>
+                nma bor deb uylading? ESHAK )))))))
+            </details>
+        </div>
+        <div>
+            <ol>
+                <li>Karta</li>
+            </ol>
+            <div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2116.2443495383955!2d39.825793001048005!3d21.422377587457127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c204b74c28d467%3A0xb2f543a618225767!2z0JrQsNCw0LHQsA!5e1!3m2!1sru!2s!4v1682447191742!5m2!1sru!2s"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <ol>
+                <li>Prmoy efir</li>
+            </ol>
+            <div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/6VrTt4yJ0D0"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</body>
+
+</html>
