@@ -1,0 +1,127 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 300px;
+}
+
+.bir {
+    width: 100px;
+    height: 100px;
+    background: red;
+    border: solid 5px blue;
+}
+
+.ikki {
+    width: 100px;
+    height: 100px;
+    background: red;
+    border: solid 5px blue;
+}
+
+.uch {
+    width: 100px;
+    height: 100px;
+    background: red;
+    border: solid 5px blue;
+}
+
+.turt {
+    width: 100px;
+    height: 100px;
+    background: red;
+    border: solid 5px blue;
+}
+
+.bir {
+    animation: bir 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation-iteration-count: infinite;
+}
+
+.ikki {
+    animation: ikki 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation-iteration-count: infinite;
+}
+
+.uch {
+    animation: uch 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation-iteration-count: infinite;
+}
+
+.turt {
+    animation: turt 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation-iteration-count: infinite;
+}
+
+/* ------------------------ */
+@keyframes bir {
+    0% {
+        transform: translate(0) rotate(0deg);
+    }
+
+    50% {
+        transform: translate(-200px, -200px) rotate(-90deg);
+    }
+
+    100% {
+        transform: translate(0) rotate(0deg);
+    }
+}
+
+/* -------------------------- */
+@keyframes ikki {
+    0% {
+        transform: translate(0) rotate(0deg);
+    }
+
+    50% {
+        transform: translate(-200px, 200px) rotate(-90deg);
+    }
+
+    100% {
+        transform: translate(0) rotate(0deg);
+    }
+}
+
+/* -------------------------- */
+@keyframes uch {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    50% {
+        transform: translate(200px, -200px) rotate(-90deg);
+    }
+
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+}
+
+/* --------------------------*/
+@keyframes turt {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    50% {
+        transform: translate(200px, 200px) rotate(-90deg);
+    }
+
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+}
