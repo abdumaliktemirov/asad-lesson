@@ -148,13 +148,13 @@ button {
 
 /* Main seris */
 .main {
-    background-image: url(../img/main-section-bg.png);
     background-size: cover;
     display: flex;
     justify-content: center;
     padding: 124px 0;
     align-items: center;
     position: relative;
+    background-image: url(../img/main-section-bg.png);
 }
 
 .main__image-1 {
@@ -261,12 +261,60 @@ button {
     height: 700px;
 }
 
+.main__image-3 .main__feather-1 {
+    width: 150px;
+    height: 130px;
+    left: 27%;
+    top: 7%;
+}
+
+.main__image-3 .main__feather-2 {
+    width: 214px;
+    height: 190px;
+    left: 51%;
+    top: 43%;
+    transform: rotate(358deg);
+}
+
+.main__image-3 .main__feather-3 {
+    width: 350px;
+    height: 290px;
+    left: 7%;
+    top: 52%;
+    transform: rotate(5deg);
+}
+
+.main__image-3 .main__feather-4 {
+    width: 135px;
+    height: 95px;
+    left: 70%;
+    top: 76%;
+    transform: rotate(5deg);
+}
+
+.main__feather-2 {
+    width: 179.89px;
+    height: 147.13px;
+}
+
+.main__feather-3 {
+    width: 179.89px;
+    height: 147.13px;
+}
+
+.main__feather-4 {
+    width: 179.89px;
+    height: 147.13px;
+}
+
+
 /* Our-products seris */
 .product {
-    background: #006157;
+    position: relative;
     padding: 75px 0;
     text-align: center;
     color: #fff;
+    background: #006157;
 }
 
 .product__title {
@@ -275,6 +323,57 @@ button {
     line-height: 64px;
     color: #FFE5CE;
     margin-bottom: 11px;
+}
+
+.product__feather-1 {
+    position: absolute;
+    width: 135px;
+    height: 180px;
+    margin-top: 20px;
+    transform: rotate(65deg);
+    left: 33%;
+    top: 4%;
+}
+
+.product__feather-2 {
+    position: absolute;
+    width: 114px;
+    height: 140px;
+    margin-top: 20px;
+    transform: rotate(11deg);
+    left: 5%;
+    top: 16%;
+}
+
+.product__feather-3 {
+    position: absolute;
+    width: 334px;
+    height: 400px;
+    margin-top: 20px;
+    transform: rotate(357deg);
+    left: 1%;
+    top: 46%;
+}
+
+.product__feather-4 {
+    position: absolute;
+    width: 279px;
+    height: 310px;
+    margin-top: 20px;
+    transform: rotate(183deg);
+    left: 84%;
+    top: -1%;
+    opacity: 0.7;
+}
+
+.product__feather-5 {
+    position: absolute;
+    width: 90px;
+    height: 100px;
+    margin-top: 20px;
+    transform: rotate(68deg);
+    left: 74%;
+    top: 73%;
 }
 
 .product__text {
@@ -431,8 +530,37 @@ button {
 .pero {
     background: #288DC6;
     padding: 100px 0;
+    position: relative;
+}
+.pero__feather-1{
+    position: absolute;
+    width: 200px;
+    height: 260px;
+    margin-top: 20px;
+    transform: rotate(107deg);
+    left: 22%;
+    top: 61%;
 }
 
+.pero__feather-2{
+    position: absolute;
+    width: 402px;
+    height: 372px;
+    margin-top: 20px;
+    transform: rotate(11deg);
+    left: 2%;
+    top: -1%;
+    opacity: 1;
+}
+.pero__feather-3{
+    position: absolute;
+    width: 270px;
+    height: 343px;
+    margin-top: 20px;
+    transform: rotate(133deg);
+    left: 70%;
+    top: 0%;
+}
 .pero__main {
     display: flex;
     justify-content: center;
@@ -497,6 +625,15 @@ button {
     background-color: #288DC6;
 }
 
+.pero__main-title {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: -0.01em;
+    color: #FFC898;
+    padding-top: 117px;
+}
 /* Our-videos seris */
 .videos {
     display: flex;
@@ -640,9 +777,8 @@ button {
     justify-content: center;
     align-items: center;
     background: #082856;
-    padding: 300px 0;
+    padding: 270px 0;
 }
-
 
 .blog__main-1 {
     position: absolute;
@@ -681,8 +817,8 @@ button {
     width: 100%;
     background-image: url(../img/vlajni-2.png);
     background-repeat: no-repeat;
-    top: 82px;
-    left: 827px;
+    top: 6px;
+    left: 811px;
 }
 
 .blog__main-2 img {
@@ -704,13 +840,25 @@ button {
 }
 
 .blog__main-3 {
-    position: absolute;
-    top: 234px;
-    left: 778px;
-    background-image: url(../img/vlajni-2-.png);
+    top: 164px;
+    left: 739px;
+    background-image: url(../img/vlajni-3-.png);
     background-repeat: no-repeat;
 }
 
+.blog__main-3 {
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    z-index: 3;
+    background-image: url(../img/vlajni-3-.png);
+    background-repeat: no-repeat;
+}
+
+.blog__main-3 img {
+    width: 420px;
+
+}
 
 /* Contact seris */
 .contact {
@@ -944,4 +1092,5 @@ button {
     text-align: center;
     color: #3A896A;
 }
+
 /* Finesh DESCTOP */
