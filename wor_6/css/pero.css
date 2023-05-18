@@ -12,10 +12,10 @@
 
 body {
     font-family: 'Zona Pro';
+    overflow: hidden;
 }
 
 .wrapper {
-    overflow: hidden;
 }
 
 a {
@@ -1301,5 +1301,7 @@ button {
     text-align: center;
     color: #3A896A;
 }
-
 /* Finesh DESCTOP */
+
+
+/* @@@@@@@@ Mediya @@@@@@@ */
