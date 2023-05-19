@@ -12,6 +12,7 @@
 
 body {
     font-family: 'Zona Pro';
+    overflow-x: hidden;
 }
 
 .container {
