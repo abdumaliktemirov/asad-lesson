@@ -19,7 +19,10 @@
 <body>
     <div class="wrapper">
         <!-- Header seris -->
-        <header id="hleader">
+        <header id="header" class="container">
+            <label for="nav__togglo" class="header__nav-togglo">
+                <i class="fa-solid fa-bars"></i>
+            </label>
             <nav class="header__nav">
                 <ul class="header__itmes">
                     <li class="header__item-1">
@@ -58,9 +61,25 @@
                 </div>
             </div>
         </header>
+        <input type="checkbox" id="nav__togglo" hidden>
+        <div class="header__mobile-nav">
+            <div class="header__mobile-header">
+                <img src="./img/header-logo.png" alt="header-logo" class="header__mobile-logo">
+                <label for="nav__togglo" class="header__nav-close">
+                    <i class="fa-solid fa-x"></i>
+                </label>
+            </div>
+            <div class="header__mobile-links">
+                <a class="header__mobile-link" href="!#">About us</a>
+                <a class="header__mobile-link" href="!#">Products</a>
+                <a class="header__mobile-link" href="!#">Videolarimiz</a>
+                <a class="header__mobile-link" href="!#">Yangiliklar</a>
+                <a class="header__mobile-link" href="!#">Foydalanish shartlari</a>
+            </div>
+        </div>
         <!-- Header seris -->
 
-          <!-- Main seris -->
+        <!-- Main seris -->
         <!-- <main class="main">
             <div class="main__image-1">
                 <button class="main__chenger">
@@ -89,67 +108,67 @@
         </main> -->
         <!-- Main seris -->
 
-        <!-- Our-products seris -->
-        <!-- <section class="product">
-            <div class="product__wrap">
-            <div class="prodict__image-bj">
-                <h2 class="product__title">Our products</h2>
-                <p class="product__text">Bizda 80 dan kop mahsulotlarimiz bor ular lorem ipsum color</p>
-                <div class="product__cards">
-                    <div class="product__card-left">
-                        <img src="./img/log/product-left.svg" alt="">
-                    </div>
-                    <div class="product__card">
-                        <h2 class="product__card-title">Бумажные продукции</h2>
-                        <img src="./img/prodcut-1.png" alt="img-1" class="product__card-img">
-                        <div class="product__card-button">
-                            <img src="./img/log/image_mini.svg" alt="mini">
-                            <span class="product__card-botton">Click for more</span>
+        <section class="product">
+            <div class="container">
+                <div class="product__wrap">
+                    <div class="prodict__image-bj">
+                        <h2 class="product__title">Our products</h2>
+                        <p class="product__text">Bizda 80 dan kop mahsulotlarimiz bor ular lorem ipsum color</p>
+                        <div class="product__cards">
+                            <div class="product__card-left">
+                                <img src="./img/log/product-left.svg" alt="">
+                            </div>
+                            <div class="product__card">
+                                <h2 class="product__card-title">Бумажные продукции</h2>
+                                <img src="./img/prodcut-1.png" alt="img-1" class="product__card-img">
+                                <div class="product__card-button">
+                                    <img src="./img/log/image_mini.svg" alt="mini">
+                                    <span class="product__card-botton">Click for more</span>
+                                </div>
+                            </div>
+                            <div class="product__card">
+                                <h2 class="product__card-title">Туалетные бумаги</h2>
+                                <img src="./img/prodcut-1.png" alt="img-1" class="product__card-img">
+                                <div class="product__card-button">
+                                    <img src="./img/log/image_mini.svg" alt="mini">
+                                    <span class="product__card-botton">Click for more</span>
+                                </div>
+                            </div>
+                            <div class="product__card">
+                                <h2 class="product__card-title">Диспенсеры</h2>
+                                <img src="./img/prodcut-1.png" alt="img-1" class="product__card-img">
+                                <div class="product__card-button">
+                                    <img src="./img/log/image_mini.svg" alt="mini">
+                                    <span class="product__card-botton">Click for more</span>
+                                </div>
+                            </div>
+                            <div class="product__card-right">
+                                <img src="./img/log/product-left.svg" alt="">
+                            </div>
+                            <div class="prodict__img">
+                                <img src="./img/our_rahmat-1.png" alt="main_feather" class="product__feather-1">
+                                <img src="./img/our_rahmat-2.png" alt="main_feather" class="product__feather-2">
+                                <img src="./img/our_rahmat-3.png" alt="main_feather" class="product__feather-3">
+                                <img src="./img/our_rahmat-4.png" alt="main_feather" class="product__feather-4">
+                                <img src="./img/our_rahmat-5 .png" alt="main_feather" class="product__feather-5">
+                            </div>
                         </div>
-                    </div>
-                    <div class="product__card">
-                        <h2 class="product__card-title">Туалетные бумаги</h2>
-                        <img src="./img/prodcut-1.png" alt="img-1" class="product__card-img">
-                        <div class="product__card-button">
-                            <img src="./img/log/image_mini.svg" alt="mini">
-                            <span class="product__card-botton">Click for more</span>
+                        <div class="prodcut__dowland">
+                            <div class="prodcut__dowland-catalog">
+                                <a href="!#"> <img src="./img/log/dowl.svg" alt="img-dow"><span>Skachat katalog</span></a>
+                            </div>
+                            <div class="prodcut__dowland-tovar">
+                                <a href="!#">
+                                    <img src="./img/log/dowl.svg" alt="img-dow"><span>Топ товары</span>
+                            </div>
+                            </a>
+                
                         </div>
-                    </div>
-                    <div class="product__card">
-                        <h2 class="product__card-title">Диспенсеры</h2>
-                        <img src="./img/prodcut-1.png" alt="img-1" class="product__card-img">
-                        <div class="product__card-button">
-                            <img src="./img/log/image_mini.svg" alt="mini">
-                            <span class="product__card-botton">Click for more</span>
-                        </div>
-                    </div>
-                    <div class="product__card-right">
-                        <img src="./img/log/product-left.svg" alt="">
-                    </div>
-                </div>
-                <div class="prodcut__dowland">
-                    <div class="prodcut__dowland-catalog">
-                        <a href="!#"> <img src="./img/log/dowl.svg" alt="img-dow"><span>Skachat katalog</span></a>
-                    </div>
-                    <div class="prodcut__dowland-tovar">
-                        <a href="!#">
-                            <img src="./img/log/dowl.svg" alt="img-dow"><span>Топ товары</span>
-                    </div>
-                    </a>
-                    <div class="prodict__img">
-                        <img src="./img/our_rahmat-1.png" alt="main_feather" class="product__feather-1">
-                        <img src="./img/our_rahmat-2.png" alt="main_feather" class="product__feather-2">
-                        <img src="./img/our_rahmat-3.png" alt="main_feather" class="product__feather-3">
-                        <img src="./img/our_rahmat-4.png" alt="main_feather" class="product__feather-4">
-                        <img src="./img/our_rahmat-5 (copy).png" alt="main_feather" class="product__feather-5">
                     </div>
                 </div>
             </div>
-            </div>
-        </section> -->
-        <!-- Our-products seris -->
+        </section>
 
-        <!-- Pero seris -->
         <!-- <section class="pero">
             <div class="pero__main">
                 <div class="pero__main-our">
@@ -166,16 +185,15 @@
                     </h1>
                     <button class="pero__moree-btn">moree</button>
                 </div>
+                <img src="./img/pero_rahmat-1.png" alt="main_feather" class="pero__feather-1">
+                <img src="./img/pero_rahmat-2.png" alt="main_feather" class="pero__feather-2">
+                <img src="./img/pero_rahmat-3.png" alt="main_feather" class="pero__feather-3">
             </div>
             <h2 class="pero__main-title">Biz haqimizda batafsil</h2>
-            <img src="./img/pero_rahmat-1.png" alt="main_feather" class="pero__feather-1">
-            <img src="./img/pero_rahmat-2.png" alt="main_feather" class="pero__feather-2">
-            <img src="./img/pero_rahmat-3.png" alt="main_feather" class="pero__feather-3">
-        </section> -->
-        <!-- Pero seris -->
+            
+        </section>
 
-        <!-- Our-videos -->
-        <!-- <section class="videos">
+     <section class="videos">
             <div class="videos__main">
                 <h1 class="videos__main-title">Bizning videolar</h1>
                 <p class="videos__main-text">bizning 20 dan ortiq video larimiz va vloglarimiz mavjud</p>
@@ -199,11 +217,9 @@
                 <img src="./img/vidyeos__feather-4.png" alt="" class="vidyeos__feather-4">
                 <img src="./img/vidyeos__feather-5.png" alt="" class="vidyeos__feather-5">
             </div>
-        </section> -->
-        <!-- Our-videos -->
+        </section> 
 
-        <!-- Blog-post -->
-        <!-- <section class="blog">
+         <section class="blog">
             <div class="blog__main-wrap">
                 <div class="blog__main">
                     <div class="blog__main-1">
@@ -232,11 +248,9 @@
                     <img src="./img/blog_rahmat-3.png" alt="" class="blog__rahmat-3">
                 </div>
             </div>
-        </section> -->
-        <!-- Blog-post -->
+        </section> 
 
-        <!-- Contact seris -->
-        <!-- <section class="contact">
+         <section class="contact">
             <div class="contact__wrap">
                 <div class="contact__wrap-main">
                     <div class="contact__main-left">
@@ -269,11 +283,9 @@
                 <img src="./img/contact_rahmat-3.png" alt="" class="contact_rahmat-3">
                 <img src="./img/contact_rahmat-4.png" alt="" class="contact_rahmat-4">
             </div>
-        </section> -->
-        <!-- Contact seris -->
+        </section>
 
-        <!-- Footer seris -->
-        <!-- <footer class="footer">
+         <footer class="footer">
             <div class="footer__wrapper">
                 <div class="footer__main">
                     <div class="footer__main-pero">
@@ -345,8 +357,7 @@
                 <span>- Powered by</span>
                 <span class="footer__button-abba">ABBA</span>
             </div>
-        </footer> -->
-        <!-- Footer seris -->
+        </footer>  -->
     </div>
 </body>
 

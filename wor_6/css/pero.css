@@ -12,10 +12,12 @@
 
 body {
     font-family: 'Zona Pro';
-    overflow: hidden;
 }
 
-.wrapper {
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1300px;
 }
 
 a {
@@ -29,11 +31,16 @@ button {
 }
 
 /* Header seris */
-#hleader {
+#header {
     display: flex;
-    padding: 32px 120px;
+    padding: 32px 0px;
     justify-content: center;
     align-items: center;
+    gap: 50px;
+}
+
+.header__nav-toggler {
+    font-size: 20px;
 }
 
 .header__itmes {
@@ -61,7 +68,6 @@ button {
 .header__right {
     display: flex;
     gap: 50px;
-    margin-left: 180px;
     align-items: center;
 }
 
@@ -116,6 +122,8 @@ button {
     pointer-events: auto;
     z-index: 2;
     background: #fff;
+    /* pointer-events: auto;
+     */
 }
 
 .header__right-languch i {
@@ -144,6 +152,52 @@ button {
     padding: 5px 0;
     opacity: 0;
     transition: 500ms;
+}
+
+.header__nav-togglo {
+    display: none;
+}
+
+.header__mobile-nav {
+    background: #fff;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 100%;
+    z-index: 10;
+    padding: 25px 32px;
+    transition: all 0.7s;
+}
+
+#nav__togglo {
+    position: relative;
+    z-index: 999;
+}
+
+#nav__togglo:checked+.header__mobile-nav {
+    left: 0;
+}
+
+.header__nav-close {
+    font-size: 25px;
+    color: #006157;
+}
+
+.header__mobile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__mobile-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 30px;
+    font-size: 20px;
 }
 
 /* Main seris */
@@ -310,7 +364,6 @@ button {
 
 /* Our-products seris */
 .product {
-    position: relative;
     padding: 75px 0;
     text-align: center;
     color: #fff;
@@ -325,14 +378,22 @@ button {
     margin-bottom: 11px;
 }
 
+.product__cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    position: relative;
+}
+
 .product__feather-1 {
     position: absolute;
     width: 135px;
     height: 180px;
     margin-top: 20px;
-    transform: rotate(65deg);
-    left: 33%;
-    top: 4%;
+    transform: rotate(61deg);
+    left: 24%;
+    top: -65%;
 }
 
 .product__feather-2 {
@@ -341,8 +402,8 @@ button {
     height: 140px;
     margin-top: 20px;
     transform: rotate(11deg);
-    left: 5%;
-    top: 16%;
+    left: -11%;
+    top: -36%;
 }
 
 .product__feather-3 {
@@ -372,8 +433,8 @@ button {
     height: 100px;
     margin-top: 20px;
     transform: rotate(68deg);
-    left: 74%;
-    top: 73%;
+    left: 78%;
+    top: 102%;
 }
 
 .product__text {
@@ -382,14 +443,6 @@ button {
     line-height: 22px;
     color: #FFFFFF;
     margin-bottom: 90px;
-}
-
-
-.product__cards {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
 }
 
 .product__card {
@@ -810,30 +863,35 @@ button {
 
 .vidyeos__feather-3 {
     position: absolute;
-    width: 200px;
-    height: 236px;
-    opacity: 0.6;
-    top: -5%;
-    right: -23%;
-    transform: rotate(-180deg);
+    width: 334px;
+    height: 400px;
+    margin-top: 20px;
+    transform: rotate(357deg);
+    left: -15%;
+    top: 31%;
 }
 
 .vidyeos__feather-4 {
     position: absolute;
-    width: 115px;
-    height: 144px;
-    top: 84%;
-    right: 3%;
-    transform: rotate(78deg);
+    width: 279px;
+    height: 310px;
+    margin-top: 20px;
+    transform: rotate(183deg);
+    left: 84%;
+    top: -79%;
+    opacity: 0.7;
 }
 
 .vidyeos__feather-5 {
     position: absolute;
-    width: 89px;
-    height: 110px;
-    top: 8%;
-    right: 103%;
-    transform: rotate(0deg);
+    width: 90px;
+    height: 100px;
+    margin-top: 20px;
+    transform: rotate(68deg);
+    left: 79%;
+    top: 104%;
+
+
 }
 
 /* Blog-post seris */
@@ -1224,7 +1282,7 @@ button {
 }
 
 .footer__pero-web i:hover {
-    transform: scale(1.4);
+    transform: rotate(540deg);
 }
 
 .footer__company-items h3 {
@@ -1301,7 +1359,56 @@ button {
     text-align: center;
     color: #3A896A;
 }
+
 /* Finesh DESCTOP */
 
+@media (max-width: 1460px) {
+    .product{
+        max-width: 100%;
+    }
+    .product__feather-1 {
+        display: none;
+    }
+}
 
-/* @@@@@@@@ Mediya @@@@@@@ */
+@media (max-width: 1320px) {
+    .container {
+        max-width: 90vw;
+    }
+
+    /* product */
+    .product__feather-1 {
+        display: none;
+        background: red;
+    }
+}
+
+@media (max-width: 1250px) {
+    .header__number {
+        display: none;
+    }
+
+    .header__nav-toggler {
+        display: none;
+    }
+}
+
+@media (max-width: 1056px) {
+    .header__item a {
+        font-size: 14px;
+    }
+
+    .header__nav-togglo {
+        display: block;
+    }
+}
+
+@media (max-width: 1056px) {
+    .header__item {
+        display: none;
+    }
+
+    #header {
+        justify-content: space-between;
+    }
+}
