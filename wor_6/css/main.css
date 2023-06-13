@@ -120,8 +120,6 @@ button {
     pointer-events: auto;
     z-index: 2;
     background: #fff;
-    /* pointer-events: auto;
-     */
 }
 
 .header__right-languch i {
