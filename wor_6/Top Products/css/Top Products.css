@@ -68,11 +68,22 @@ body {
 .top-1__cards {
     display: flex;
     justify-content: center;
-    margin-left: 20px;
+    margin-left: 35px;
+}
+
+.top-1__card {
+    margin-left: 80px;
 }
 
 .blog-swper-bottom {
-    margin-top: 100px;
+    margin-top: 50px;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    transform: translateY(10px);
 }
 
 .top-1__title h2 {
@@ -81,6 +92,7 @@ body {
     font-size: 35.0983px;
     line-height: 43px;
     color: #FFFFFF;
+    margin-top: 91px;
 }
 
 .top-1__text p {
@@ -151,16 +163,74 @@ body {
     position: relative;
 }
 
-.swiper-top__left {
+.swiperbottom__left {
     position: absolute;
-    top: 25%;
     left: 36%;
+    bottom: 0;
 }
 
-.swiper-top__right {
+.swiper-bottom__right {
     position: absolute;
-    top: 25%;
     right: 36%;
+    bottom: 0;
+}
+
+.blog-post__1 img {
+    position: absolute;
+    top: -17%;
+    left: 2%;
+    width: 156.68px;
+    height: 179.24px;
+    transform: rotate(1deg);
+}
+
+.blog-post__2 img {
+    position: absolute;
+    top: 18%;
+    left: -6%;
+    width: 189px;
+    height: 284px;
+    transform: rotate(301deg);
+
+    width: 129.31px;
+    height: 194.25px;
+}
+
+.blog-post__3 img {
+    position: absolute;
+    top: -14%;
+    right: -10%;
+    transform: rotate(105deg);
+    width: 129.31px;
+    height: 194.25px;
+    opacity: 0.6;
+}
+
+.blog-post__4 img {
+    position: absolute;
+    bottom: 61%;
+    right: -8%;
+    transform: rotate(68deg);
+    width: 110.31px;
+    height: 120.25px;
+    opacity: 0.6;
+}
+.blog-post__5 img {
+    position: absolute;
+    top: 1%;
+    left: -8%;
+    transform: rotate(11deg);
+    width: 80.31px;
+    height: 87.25px;
+    opacity: 0.6;
+}
+
+.abdumalik{
+    padding-bottom: 200px;
+    border: solid 1px red;
+}
+.swiper-pagination {
+    margin-top: 200px;
 }
 
 .swiper-pagination-bullet {
