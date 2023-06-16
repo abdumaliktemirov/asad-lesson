@@ -1,8 +1,5 @@
 body {
     font-family: 'Zona Pro';
-}
-
-#top-products {
     background: #016258;
 }
 
@@ -59,15 +56,11 @@ body {
     color: #006259;
 }
 
-
 /* Top-1 seris start */
-#top-1 {
-    background: #016258;
-}
-
 .top-1__cards {
     display: flex;
     justify-content: center;
+    padding-bottom: 169px;
     margin-left: 35px;
 }
 
@@ -76,14 +69,20 @@ body {
 }
 
 .blog-swper-bottom {
-    margin-top: 50px;
+    margin: 50px 0 200px 0;
 }
 
 .swiper-horizontal>.swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
-    transform: translateY(10px);
+    transform: translateY(100px);
+}
+
+.swiper-pagination {
+    position: absolute;
+    z-index: 10;
+    margin-bottom: 100px;
 }
 
 .top-1__title h2 {
@@ -215,6 +214,7 @@ body {
     height: 120.25px;
     opacity: 0.6;
 }
+
 .blog-post__5 img {
     position: absolute;
     top: 1%;
@@ -225,10 +225,11 @@ body {
     opacity: 0.6;
 }
 
-.abdumalik{
+.abdumalik {
     padding-bottom: 200px;
     border: solid 1px red;
 }
+
 .swiper-pagination {
     margin-top: 200px;
 }
